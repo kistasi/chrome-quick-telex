@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Telex",
+  "description": "A simple plugin which provide a list of the latest articles on telex.hu news site.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/telex-logo.png",
+    "32": "images/telex-logo.png",
+    "48": "images/telex-logo.png",
+    "128": "images/telex-logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
