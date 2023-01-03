@@ -27,8 +27,17 @@ function transformArticlesToJson(articles) {
   return results;
 }
 
+function renderArticles(articles) {
+  let html = '';
+  articles.forEach(article => {
+    html += `<li><a target="_blank" href="${article.link}">${article.title}</a></li>`;
+  });
+
+  document.querySelector('.articles ul').innerHTML = html;
+}
+
 (async () => {
   let articles = await getArticles();
   articles = transformArticlesToJson(articles);
-  console.log(articles);
+  renderArticles(articles);
 })();
