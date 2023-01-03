@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Quick Telex",
-  "description": "A simple plugin which provide a list of the latest articles on telex.hu news site.",
+  "description": "A simple Google Chrome / Microsoft Edge plugin which provide a list of the latest articles on telex.hu news site.",
   "version": "1.0",
   "icons": {
     "16": "images/telex-logo.png",
