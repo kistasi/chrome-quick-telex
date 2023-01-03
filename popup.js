@@ -13,13 +13,9 @@ function transformArticlesToJson(articles) {
   let results = [];
 
   items.forEach(item => {
-    let date = item.querySelector('pubDate').textContent;
-    date = new Date(date).toLocaleDateString('hu-HU');
-
     results.push({
       title: item.querySelector('title').textContent,
       link: item.querySelector('link').textContent,
-      date: date,
       description: item.querySelector('description').textContent,
     });
   });
