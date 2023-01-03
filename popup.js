@@ -26,7 +26,7 @@ function transformArticlesToJson(articles) {
 function renderArticles(articles) {
   let html = '';
   articles.forEach(article => {
-    html += `<li><a target="_blank" href="${article.link}">${article.title}</a></li>`;
+    html += `<li><a target="_blank" title="${article.description}" href="${article.link}">${article.title}</a></li>`;
   });
 
   document.querySelector('.articles ul').innerHTML = html;
